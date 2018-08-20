@@ -1,0 +1,602 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>US State Legislation Supporting Parents with Disabilities</title>
+        <link rel="stylesheet" href="https://lurie-institute.github.io/dismap/ammap.css" type="text/css">
+        <script src="https://lurie-institute.github.io/dismap/ammap.js" type="text/javascript"></script>
+    
+        <!-- map file should be included after ammap.js -->
+		<script src="https://www.amcharts.com/lib/3/maps/js/usaLow.js" type="text/javascript"></script>
+        <script src="https://www.amcharts.com/lib/3/themes/light.js"></script>
+        <script>
+			/*AmCharts.makeChart("mapdiv", {*/
+            var map = AmCharts.makeChart("chartdiv", {
+type: "map",
+dragMap:false,
+accessible: true,
+getAreasFromMap: true,
+addClassNames: true,
+showBalloonOnSelectedObject:true,
+accessibleTitle: "US State Legislation Supporting Parents with Disabilities",
+projection: "mercator",
+zoomControl: { zoomControlEnabled: false,
+	     homeButtonEnabled:false,
+	     },
+dataProvider: {
+map: "usaLow",
+areas: [
+      {
+        id: "US-AL",
+        "urlTarget":"_blank", url:"https://heller.brandeis.edu/parents-with-disabilities/map/alabama.html",
+        accessibleLabel: "Alabama",
+        tabIndex: 0,
+        color: "#efefef",
+        balloonText: "<b>[[title]]</b> <br> Legislation Status: None"
+      },
+      {
+        id: "US-AK",
+        "urlTarget":"_blank", url:"https://heller.brandeis.edu/parents-with-disabilities/map/alaska.html",
+        accessibleLabel: "Alaska",
+        tabIndex: 0,
+        color: "#efefef",
+        balloonText: "<b>[[title]]</b> <br> Legislation Status: None"
+      },
+      {
+        id: "US-AZ",
+        "urlTarget":"_blank", url:"https://heller.brandeis.edu/parents-with-disabilities/map/arizona.html",
+        accessibleLabel: "Arizona",
+        tabIndex: 0,
+        color: "#009e73",
+        balloonText: "<b>[[title]]</b> <br> Legislation Status: Passed"
+      },
+      {
+        id: "US-AR",
+        "urlTarget":"_blank", url:"https://heller.brandeis.edu/parents-with-disabilities/map/arkansas.html",
+        accessibleLabel: "Arkansas",
+        tabIndex: 0,
+        color: "#009e73",
+        balloonText: "<b>[[title]]</b> <br> Legislation Status: Passed"
+      },
+      {
+        id: "US-CA",
+        "urlTarget":"_blank", url:"https://heller.brandeis.edu/parents-with-disabilities/map/california.html",
+        accessibleLabel: "California",
+	tabIndex: 0,
+        color: "#009e73",
+        balloonText: "<b>[[title]]</b> <br> Legislation Status: Passed"
+      },
+      {
+        id: "US-CO",
+        "urlTarget":"_blank", url:"https://heller.brandeis.edu/parents-with-disabilities/map/colorado.html",
+        accessibleLabel: "Colorado",
+        tabIndex: 0,
+        color: "#009e73",
+        balloonText: "<b>[[title]]</b> <br> Legislation Status: Passed"
+      },
+      {
+        id: "US-CT",
+        "urlTarget":"_blank", url:"https://heller.brandeis.edu/parents-with-disabilities/map/connecticut.html",
+        accessibleLabel: "Connecticut",
+        tabIndex: 0,
+        color: "#efefef",
+        balloonText: "<b>[[title]]</b> <br> Legislation Status: None",
+        callout:"true",
+      },
+
+      {
+        id: "US-DE",
+        "urlTarget":"_blank", url:"https://heller.brandeis.edu/parents-with-disabilities/map/delaware.html",
+        accessibleLabel: "Delaware",
+        tabIndex: 0,
+        color: "#efefef",
+        balloonText: "<b>[[title]]</b> <br> Legislation Status: None",
+        callout:"true",
+      },
+      {
+        id: "US-FL",
+        "urlTarget":"_blank", url:"https://heller.brandeis.edu/parents-with-disabilities/map/florida.html",
+        accessibleLabel: "Flordia",
+        tabIndex: 0,
+        color: "#efefef",
+        balloonText: "<b>[[title]]</b> <br> Legislation Status: None"
+      },
+      {
+	id: "US-GA",
+        "urlTarget":"_blank", url:"https://heller.brandeis.edu/parents-with-disabilities/map/georgia.html",
+        accessibleLabel: "Georgia",
+        tabIndex: 0,
+        color: "#efefef",
+        balloonText: "<b>[[title]]</b> <br> Legislation Status: None"
+      },
+      {
+
+        id: "US-HI",
+        "urlTarget":"_blank", url:"https://heller.brandeis.edu/parents-with-disabilities/map/hawaii.html",
+        accessibleLabel: "Hawaii",
+        tabIndex: 0,
+        color: "#56b4e9",
+        balloonText: "<b>[[title]]</b> <br> Legislation Status: Pending",
+        
+      },
+      {
+        id: "US-ID",
+        "urlTarget":"_blank", url:"https://heller.brandeis.edu/parents-with-disabilities/map/idaho.html",
+        accessibleLabel: "Idaho",
+        tabIndex: 0,
+        color: "#009e73",
+        balloonText: "<b>[[title]]</b> <br> Legislation Status: Passed"
+      },
+      {
+        id: "US-IL",
+        "urlTarget":"_blank", url:"https://heller.brandeis.edu/parents-with-disabilities/map/illinois.html",
+        accessibleLabel: "Illinois",
+        tabIndex: 0,
+        color: "#009e73",
+        balloonText: "<b>[[title]]</b> <br> Legislation Status: Passed"
+      },
+      {
+        id: "US-IN",
+        "urlTarget":"_blank", url:"https://heller.brandeis.edu/parents-with-disabilities/map/indiana.html",
+        accessibleLabel: "Indiana",
+        tabIndex: 0,
+        color: "#efefef",
+        balloonText: "<b>[[title]]</b> <br> Legislation Status: None"
+      },
+      {
+        id: "US-IA",
+        "urlTarget":"_blank", url:"https://heller.brandeis.edu/parents-with-disabilities/map/iowa.html",
+        accessibleLabel: "Iowa",
+        tabIndex: 0,
+        color: "#efefef",
+        balloonText: "<b>[[title]]</b> <br> Legislation Status: None"
+      },
+      {
+        id: "US-KS",
+        "urlTarget":"_blank", url:"https://heller.brandeis.edu/parents-with-disabilities/map/kansas.html",
+        accessibleLabel: "Kansas",
+        tabIndex: 0,
+        color: "#009e73",
+        balloonText: "<b>[[title]]</b> <br> Legislation Status: Passed"
+      },
+      {
+        id: "US-KY",
+        "urlTarget":"_blank", url:"https://heller.brandeis.edu/parents-with-disabilities/map/kentucky.html",
+        accessibleLabel: "Kentucky",
+        tabIndex: 0,
+        color: "#56b4e9",
+        balloonText: "<b>[[title]]</b> <br> Legislation Status: Pending"
+      },
+      {
+        id: "US-LA",
+        "urlTarget":"_blank", url:"https://heller.brandeis.edu/parents-with-disabilities/map/louisiana.html",
+        accessibleLabel: "Louisiana",
+        tabIndex: 0,
+        color: "#efefef",
+        balloonText: "<b>[[title]]</b> <br> Legislation Status: None"
+      },
+      {
+        id: "US-ME",
+        "urlTarget":"_blank", url:"https://heller.brandeis.edu/parents-with-disabilities/map/maine.html",
+        accessibleLabel: "Maine",
+        tabIndex: 0,
+        color: "#efefef",
+        balloonText: "<b>[[title]]</b> <br> Legislation Status: None",
+     
+      },
+      {
+        id: "US-MD",
+        "urlTarget":"_blank", url:"https://heller.brandeis.edu/parents-with-disabilities/map/maryland.html",
+        accessibleLabel: "Maryland",
+        tabIndex: 0,
+        color: "#009e73",
+        balloonText: "<b>[[title]]</b> <br> Legislation Status: Passed",
+        callout:"true",
+      },
+      {
+        id: "US-MA",
+        "urlTarget":"_blank", url:"https://heller.brandeis.edu/parents-with-disabilities/map/massachusetts.html",
+        accessibleLabel: "Massachusetts",
+        tabIndex: 0,
+        color: "#56b4e9",
+        balloonText: "<b>[[title]]</b> <br> Legislation Status: Pending",
+        
+      },
+      {
+        id: "US-MI",
+        "urlTarget":"_blank", url:"https://heller.brandeis.edu/parents-with-disabilities/map/michigan.html",
+        accessibleLabel: "Michigan",
+        tabIndex: 0,
+        color: "#009e73",
+        balloonText: "<b>[[title]]</b> <br> Legislation Status: Passed"
+      },
+      {
+        id: "US-MN",
+        "urlTarget":"_blank", url:"https://heller.brandeis.edu/parents-with-disabilities/map/minnesota.html",
+        accessibleLabel: "Minnesota",
+        tabIndex: 0,
+        color: "#56b4e9",
+        balloonText: "<b>[[title]]</b> <br> Legislation Status: Pending"
+      },
+      {
+        id: "US-MS",
+        "urlTarget":"_blank", url:"https://heller.brandeis.edu/parents-with-disabilities/map/mississippi.html",
+        accessibleLabel: "Mississippi",
+        tabIndex: 0,
+        color: "#efefef",
+        balloonText: "<b>[[title]]</b> <br> Legislation Status: None"
+      },
+      {
+        id: "US-MO",
+        "urlTarget":"_blank", url:"https://heller.brandeis.edu/parents-with-disabilities/map/missouri.html",
+        accessibleLabel: "Missouri",
+        tabIndex: 0,
+        color: "#009e73",
+        balloonText: "<b>[[title]]</b> <br> Legislation Status: Passed"
+      },
+      {
+        id: "US-MT",
+        "urlTarget":"_blank", url:"https://heller.brandeis.edu/parents-with-disabilities/map/montana.html",
+        accessibleLabel: "Montana",
+        tabIndex: 0,
+        color: "#efefef",
+        balloonText: "<b>[[title]]</b> <br> Legislation Status: None"
+      },
+      {
+        id: "US-NE",
+        "urlTarget":"_blank", url:"https://heller.brandeis.edu/parents-with-disabilities/map/nebraska.html",
+        accessibleLabel: "Nebraska",
+        tabIndex: 0,
+        color: "#009e73",
+        balloonText: "<b>[[title]]</b> <br> Legislation Status: Passed"
+      },
+      {
+        id: "US-NV",
+        "urlTarget":"_blank", url:"https://heller.brandeis.edu/parents-with-disabilities/map/nevada.html",
+        accessibleLabel: "Nevada",
+        tabIndex: 0,
+        color: "#efefef",
+        balloonText: "<b>[[title]]</b> <br> Legislation Status: None"
+      },
+      {
+        id: "US-NH",
+        "urlTarget":"_blank", url:"https://heller.brandeis.edu/parents-with-disabilities/map/new-hampshire.html",
+        accessibleLabel: "New Hampshire",
+        tabIndex: 0,
+        color: "#efefef",
+        balloonText: "<b>[[title]]</b> <br> Legislation Status: None"
+      },
+      {
+        id: "US-NJ",
+        "urlTarget":"_blank", url:"https://heller.brandeis.edu/parents-with-disabilities/map/new-jersey.html",
+        accessibleLabel: "New Jersey",
+        tabIndex: 0,
+        color: "#efefef",
+        balloonText: "<b>[[title]]</b> <br> Legislation Status: None",
+        callout:"true",
+      },
+      {
+        id: "US-NM",
+        "urlTarget":"_blank", url:"https://heller.brandeis.edu/parents-with-disabilities/map/new-mexico.html",
+        accessibleLabel: "New Mexico",
+        tabIndex: 0,
+        color: "#efefef",
+        balloonText: "<b>[[title]]</b> <br> Legislation Status: None"
+      },
+      {
+        id: "US-NY",
+        "urlTarget":"_blank", url:"https://heller.brandeis.edu/parents-with-disabilities/map/new-york.html",
+        accessibleLabel: "New York",
+        tabIndex: 0,
+        color: "#56b4e9",
+        balloonText: "<b>[[title]]</b> <br> Legislation Status: Pending"
+      },
+      {
+        id: "US-NC",
+        "urlTarget":"_blank", url:"https://heller.brandeis.edu/parents-with-disabilities/map/north-carolina.html",
+        accessibleLabel: "North Carolina",
+        tabIndex: 0,
+        color: "#efefef",
+        balloonText: "<b>[[title]]</b> <br> Legislation Status: None"
+      },
+      {
+        id: "US-ND",
+        "urlTarget":"_blank", url:"https://heller.brandeis.edu/parents-with-disabilities/map/north-dakota.html",
+        accessibleLabel: "North Dakota",
+        tabIndex: 0,
+        color: "#efefef",
+        balloonText: "<b>[[title]]</b> <br> Legislation Status: None"
+      },
+      {
+        id: "US-OH",
+        "urlTarget":"_blank", url:"https://heller.brandeis.edu/parents-with-disabilities/map/ohio.html",
+        accessibleLabel: "Ohio",
+        tabIndex: 0,
+        color: "#56b4e9",
+        balloonText: "<b>[[title]]</b> <br> Legislation Status: Pending"
+      },
+      {
+        id: "US-OK",
+        "urlTarget":"_blank", url:"https://heller.brandeis.edu/parents-with-disabilities/map/oklahoma.html",
+        accessibleLabel: "Oklahoma",
+        tabIndex: 0,
+        color: "#efefef",
+        balloonText: "<b>[[title]]</b> <br> Legislation Status: None"
+      },
+      {
+        id: "US-OR",
+        "urlTarget":"_blank", url:"https://heller.brandeis.edu/parents-with-disabilities/map/oregon.html",
+        accessibleLabel: "Oregon",
+        tabIndex: 0,
+        color: "#009e73",
+        balloonText: "<b>[[title]]</b> <br> Legislation Status: Passed"
+      },
+      {
+        id: "US-PA",
+        "urlTarget":"_blank", url:"https://heller.brandeis.edu/parents-with-disabilities/map/pennsylvania.html",
+        accessibleLabel: "Pennsylvania",
+        tabIndex: 0,
+        color: "#efefef",
+        balloonText: "<b>[[title]]</b> <br> Legislation Status: None"
+      },
+      {
+        id: "US-RI",
+        "urlTarget":"_blank", url:"https://heller.brandeis.edu/parents-with-disabilities/map/rhode-island.html",
+        accessibleLabel: "Rhode Island",
+        tabIndex: 0,
+        color: "#009e73",
+        balloonText: "<b>[[title]]</b> <br> Legislation Status: Passed",
+        callout:"true",
+      },
+      {
+        id: "US-SC",
+        "urlTarget":"_blank", url:"https://heller.brandeis.edu/parents-with-disabilities/map/south-carolina.html",
+        accessibleLabel: "South Carolina",
+        tabIndex: 0,
+        color: "#009e73",
+        balloonText: "<b>[[title]]</b> <br> Legislation Status: Passed"
+      },
+      {
+        id: "US-SD",
+        "urlTarget":"_blank", url:"https://heller.brandeis.edu/parents-with-disabilities/map/south-dakota.html",
+        accessibleLabel: "South Dakota",
+        tabIndex: 0,
+        color: "#efefef",
+        balloonText: "<b>[[title]]</b> <br> Legislation Status: None"
+      },
+      {
+        id: "US-TN",
+        "urlTarget":"_blank", url:"https://heller.brandeis.edu/parents-with-disabilities/map/tennessee.html",
+        accessibleLabel: "Tennessee",
+        tabIndex: 0,
+        color: "#009e73",
+        balloonText: "<b>[[title]]</b> <br> Legislation Status: Passed"
+      },
+      {
+        id: "US-TX",
+        "urlTarget":"_blank", url:"https://heller.brandeis.edu/parents-with-disabilities/map/texas.html",
+        accessibleLabel: "Texas",
+        tabIndex: 0,
+        color: "#efefef",
+        balloonText: "<b>[[title]]</b> <br> Legislation Status: None"
+      },
+      {
+        id: "US-UT",
+        "urlTarget":"_blank", url:"https://heller.brandeis.edu/parents-with-disabilities/map/utah.html",
+        accessibleLabel: "Utah",
+        tabIndex: 0,
+        color: "#009e73",
+        balloonText: "<b>[[title]]</b> <br> Legislation Status: Passed"
+      },
+      {
+        id: "US-VT",
+        "urlTarget":"_blank", url:"https://heller.brandeis.edu/parents-with-disabilities/map/vermont.html",
+        accessibleLabel: "Vermont",
+        tabIndex: 0,
+        color: "#009e73",
+        balloonText: "<b>[[title]]</b> <br> Legislation Status: Passed"
+      },
+      {
+        id: "US-VA",
+        "urlTarget":"_blank", url:"https://heller.brandeis.edu/parents-with-disabilities/map/virginia.html",
+        accessibleLabel: "Virginia",
+        tabIndex: 0,
+        color: "#56b4e9",
+        balloonText: "<b>[[title]]</b> <br> Legislation Status: Pending"
+      },
+      {
+        id: "US-WA",
+        "urlTarget":"_blank", url:"https://heller.brandeis.edu/parents-with-disabilities/map/washington.html",
+        accessibleLabel: "Washington (state)",
+        tabIndex: 0,
+        color: "#009e73",
+        balloonText: "<b>[[title]]</b> <br> Legislation Status: Passed"
+      },      {
+        id: "US-DC",
+        "urlTarget":"_blank", url:"https://heller.brandeis.edu/parents-with-disabilities/map/distrcit-of-columbia.html",
+        accessibleLabel:"Washington DC",
+        tabIndex: 0,
+        color: "#efefef", 
+        balloonText: "<b>[[title]]</b> <br> Legislation Status: None",
+        callout:"true",
+				}, 
+      {
+        id: "US-WV",
+        "urlTarget":"_blank", url:"https://heller.brandeis.edu/parents-with-disabilities/map/west-virginia.html",
+        accessibleLabel: "West Virginia",
+        tabIndex: 0,
+        color: "#009e73",
+        balloonText: "<b>[[title]]</b> <br> Legislation Status: Passed"
+      },
+      {
+        id: "US-WI",
+        "urlTarget":"_blank", url:"https://heller.brandeis.edu/parents-with-disabilities/map/wisconsin.html",
+        accessibleLabel: "Wisconsin",
+        tabIndex: 0,
+        color: "#efefef",
+        balloonText: "<b>[[title]]</b> <br> Legislation Status: None"
+      },
+      {
+        id: "US-WY",
+        "urlTarget":"_blank", url:"https://heller.brandeis.edu/parents-with-disabilities/map/wyoming.html",
+        accessibleLabel: "Wyoming",
+        tabIndex: 0,
+        color: "#efefef",
+        balloonText: "<b>[[title]]</b> <br> Legislation Status: None"
+      }
+    ]
+  },
+
+  areasSettings: {
+    autoZoom: false,
+    
+    rollOverOutlineColor:"#000",
+    rollOverOutlineAlpha:"1",
+    rollOverOutlineThickness:"2",
+    outlineThickness: "1",
+    outlineColor: "#000",
+    outlineAlpha: "1",
+          },
+                
+  /*the properties of the pop-out balloons*/
+  balloon: {
+    borderThickness:0.5,
+    borderAlpha: 1,
+    fillAlpha: 0.95,
+    horizontalPadding: 10,
+    verticalPadding: 10,
+    shadowAlpha: 1,
+    fontSize: 14,
+    cornerRadius: 4,
+     },
+  /*the properties of the labels*/
+  imagesSettings: {
+    labelColor: "#000",
+    labelPosition: "middle",
+    labelRollOverColor:"#000",
+    outlineThickness: 1,
+    outlineColor:"#000",
+    labelFontSize: 11,
+ 
+  },
+  /*the properties of the legend*/
+  legend: {
+    //                width: 150,
+    align: "center",
+    //                marginRight: 27,
+    //                marginLeft: 27,
+    //                equalWidths: false,
+
+    markerBorderColor: "#000",
+    borderAlpha: 0,
+    bottom: 50,
+    left: 150,
+	labelWidth:60,
+    //                top: 50,
+    //                right: 50,
+    //                maxRows: 1,
+    //                equalWidths: true,
+    //                horizontalGap: 10,
+    data: [
+      {
+        title: "None",
+        color: "#efefef"
+      },
+      {
+        title: "Passed",
+        color: "#009e73"
+      },
+      {
+        title: "Pending",
+        color: "#56b4e9"
+      },
+      {
+        title: "Passed/Pending",
+        color: "#f0e442"
+      }
+    ]
+  }
+});
+
+map.addListener("init", function() {
+    // small areas
+  var small = [ "US-MA", "US-RI", "US-CT", "US-NJ", "US-DE", "US-MD", "US-DC" ];
+    // set up a longitude exceptions for certain areas
+  var longitude = {
+    "US-CA": -130,
+    "US-FL": 120,
+    "US-TX": 1,
+    "US-LA": 45,
+   "US-HI": -50,
+    //"US-RI": 165,
+    "US-MI": 80,
+   // "US-MD": 138
+  };
+  var latitude = {
+	"US-AK": -81,
+	"US-NH": 83.5,
+   // "US-MD": 65
+  };
+    //Positions of callouts
+  var callouts = [
+    70, 60, 46, 26, 3, -20, -40, -56
+  ];
+  var offset = 0;
+    setTimeout( function() {
+    // iterate through areas and put a label over center of each
+    //map.dataProvider.images = [];
+        for ( x in map.dataProvider.areas ) {
+        var area = map.dataProvider.areas[ x ];
+        area.groupId = area.id;
+        var image = new AmCharts.MapImage();
+        image.title = "<b>" + area.title+ "</b>" + area.balloonText.split( '</b>' ).pop();
+        image.linkToObject = area;
+        image.groupId = area.id;
+      
+      //image.mouseEnabled=false;
+       // image.selectable=false;
+       // image.bringForwardOnHover=false;
+      
+      // callout or regular label
+      if ( area.callout ) {
+        image.latitude = callouts.shift();
+        image.longitude = 165;
+        image.label = area.id.split( '-' ).pop();
+        image.type = "rectangle";
+        image.color = area.color;
+        image.shiftX = offset;
+        image.width = 25;
+        image.height = 25;
+        
+        
+        // create additional image
+        var image2 = new AmCharts.MapImage();
+        image2.latitude = image.latitude;
+        image2.longitude = image.longitude;
+        image2.label = "";
+        image2.labelColor = "#000";
+        image2.labelShiftX = 26;
+        image2.labelShiftY = -1.5;
+        image2.groupId = area.id;
+        map.dataProvider.images.push( image2 );
+      }
+      else {
+        image.latitude = latitude[ area.id ] || map.getAreaCenterLatitude( area );
+        image.longitude = longitude[ area.id ] || map.getAreaCenterLongitude( area );
+        image.label = area.id.split( '-' ).pop() + "\n" ;
+      }
+      
+      map.dataProvider.images.push( image );
+    }
+    map.validateData();
+  }, 100 )
+}
+              );
+        </script>
+    </head>
+
+    <body>
+        <div id="chartdiv" style="width: 790px; background-color:#FFFFFF; height: 590px;box-shadow: 0 0 1px rgba(0, 0, 0, 0.05);"></div>
+    </body>
+
+</html>
